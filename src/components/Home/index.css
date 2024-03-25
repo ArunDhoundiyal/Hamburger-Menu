@@ -1,0 +1,40 @@
+.bg-home-container {
+  background-size: cover;
+  min-height: 100vh;
+  min-width: 100%;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .desktop-home-size {
+    display: none;
+  }
+  .small-home-size {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .desktop-home-size {
+    display: none;
+  }
+  .small-home-size {
+    display: block;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .desktop-home-size {
+    width: 100%;
+  }
+  .small-home-size {
+    display: none;
+  }
+}

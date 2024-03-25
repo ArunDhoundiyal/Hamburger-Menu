@@ -1,0 +1,40 @@
+.bg-about-container {
+  background-size: cover;
+  min-height: 100vh;
+  min-width: 100%;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .desktop-about-size {
+    display: none;
+  }
+  .small-about-size {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .desktop-about-size {
+    display: none;
+  }
+  .small-about-size {
+    display: block;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .desktop-about-size {
+    width: 100%;
+  }
+  .small-about-size {
+    display: none;
+  }
+}
